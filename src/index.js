@@ -18,10 +18,10 @@ const getInitialiConfig = el => {
 }
 
 const unwatch = () => {
-  window.removeEventListener('scroll', listenAction)
+  window && window.removeEventListener('scroll', listenAction)
 }
 const watch = () => {
-  window.addEventListener('scroll', listenAction)
+  window && window.addEventListener('scroll', listenAction)
 }
 
 let bindingConfig = {}
